@@ -429,7 +429,7 @@ class AzureEndpointSelector:
             if is_global:
                 return "traffic_manager_alb"
             else:
-                return "application_gateway"
+                return "azure_load_balancer"
 
         # Web application path
         is_internet_facing = self.ask_yes_no(
